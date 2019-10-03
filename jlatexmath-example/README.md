@@ -1,4 +1,4 @@
-# CKEditor 5 classic example with math plugin with JLaTeXMath typesetting engine
+# CKEditor 5 classic example with math plugin and JLaTeXMath typesetting engine
 
 Exmaple for using custom typesetting engine. __This example is only for demonstration purpose!__
 
