@@ -1,4 +1,4 @@
-import InlineEditor from '@ckeditor/ckeditor5-build-inline';
+import ClassicEditor from '@ckeditor/ckeditor5/packages/ckeditor5-build-inline';
 import CKEditorInspector from '@ckeditor/ckeditor5-inspector';
 
 InlineEditor.create( document.querySelector( '#editor' ), {

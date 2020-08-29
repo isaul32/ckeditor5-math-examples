@@ -5,8 +5,8 @@
   "author": "Sauli Anto",
   "license": "ISC",
   "dependencies": {
-    "@ckeditor/ckeditor5-build-classic": "github:isaul32/ckeditor5-build-classic",
-    "@ckeditor/ckeditor5-inspector": "^1.4.0"
+    "@ckeditor/ckeditor5": "github:isaul32/ckeditor5",
+    "@ckeditor/ckeditor5-inspector": "^2.2.0"
   },
   "devDependencies": {
     "webpack": "^4.41.0",

@@ -12,28 +12,35 @@
         </style>
     </head>
     <body>
-            <h1>CKEditor 5 – classic editor build – math plugin sample</h1>
+        <h1>CKEditor 5 – classic editor build</h1>
+        <h2>Math plugin – KaTeX demo</h2>
+    
+        <h2>Example TeX equations</h2>
+        <b>Math</b>
+        <pre>\x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}</pre>
+        <b>Chem</b>
+        <pre>\ce{CH4 + 2 O2 -> CO2 + 2 H2O}</pre>
+        
+        <h2>Paste from text</h2>
+        <b>Display</b>
+        <pre>\[ x=\frac{-b\pm\sqrt{b^2-4ac}}{2a} \]</pre>
+        <b>Inline</b>
+        <pre>\( x+\sqrt{1-x^2} \)</pre>
 
-            <h2>Example TeX equations</h2>
-            <b>Math</b>
-            <pre>x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}</pre>
-            <b>Chem</b>
-            <pre>\ce{CH4 + 2 O2 -> CO2 + 2 H2O}</pre>
+        <h2>Preview editor</h2>
+        <div id="editor">
+            <p>Lorem... <span class="math-tex">    \(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}   \)   </span> ...ipsum</p>
+            <p>Lorem... <span class="math-tex"> \[     x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}  \]  </span> ...ipsum</p>
+            <p>Lorem... <script type="math/tex">x+\sqrt{1-x^2}</script> ...ipsum</p>
+            <p>Lorem... <script type="math/tex; mode=display">x+\sqrt{1-x^2}</script> ...ipsum</p>
+        </div>
 
-            <h2>Preview editor</h2>
-            <div id="editor">
-                <p>Lorem... <span class="math-tex">    \(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}   \)   </span> ...ipsum</p>
-                <p>Lorem... <span class="math-tex"> \[     x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}  \]  </span> ...ipsum</p>
-                <p>Lorem... <script type="math/tex">x+\sqrt{1-x^2}</script> ...ipsum</p>
-                <p>Lorem... <script type="math/tex; mode=display">x+\sqrt{1-x^2}</script> ...ipsum</p>
-            </div>
+        <h2>Preview editor data in HTML</h2>
+        <div id="editor-preview"></div>
 
-            <h2>Preview editor data in HTML</h2>
-            <div id="editor-preview"></div>
+        <h2>Preview editor data in text</h2>
+        <pre id="editor-preview-html" style="word-wrap: break-word; white-space: pre-wrap;"></pre>
 
-            <h2>Preview editor data in text</h2>
-            <pre id="editor-preview-html" style="word-wrap: break-word; white-space: pre-wrap;"></pre>
-
-            <script src="main.js"></script>
+        <script src="main.js"></script>
     </body>
 </html>
